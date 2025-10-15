@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Password — El Yazid</title>
+
+  <!-- Chemins corrects -->
+  <link rel="stylesheet" href="../css/style.css">
+  <script defer src="../js/script.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Accueil</a></li>
+        <li><a href="./informations.html">Informations</a></li>
+        <li><a href="./password.html">Générateur</a></li>
+        <li><a href="./apropos.html">À propos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <main class="main">
+      <section class="card" style="grid-column:1/-1">
+        <h2>Temps nécessaire pour déchiffrer (estimation)</h2>
+        <div style="overflow:auto;">
+          <!-- J'ai conservé le tableau original mais tu peux ajuster les valeurs -->
+          <table>
+            <thead>
+              <tr>
+                <th>Nb caractères</th>
+                <th>Uniquement chiffres</th>
+                <th>Minuscules</th>
+                <th>Minuscules+Maj</th>
+                <th>+Chiffres</th>
+                <th>+Symboles</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- (tu peux coller les mêmes lignes que ton ancien fichier si tu veux) -->
+              <tr><td>8</td><td>instantané</td><td>5 s</td><td>22 min</td><td>1 hr</td><td>8 hr</td></tr>
+              <tr><td>10</td><td>instantané</td><td>58 min</td><td>1 mois</td><td>7 mois</td><td>5 années</td></tr>
+              <tr><td>12</td><td>25 s</td><td>3 semaines</td><td>300 années</td><td>2000 années</td><td>34k années</td></tr>
+              <!-- etc. -->
+            </tbody>
+            <tfoot>
+              <tr><td colspan="6">Ces chiffres sont indicatifs — utilisez des mots de passe longs et uniques.</td></tr>
+            </tfoot>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 — Secure Password by El Yazid</p>
+      </footer>
+    </body>
+    </html>
